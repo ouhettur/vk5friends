@@ -1,0 +1,18 @@
+{% extends 'app/baseapp.html' %}
+{% load socialaccount %}
+{% block app %}
+        <h2>Your five friends:</h2>
+        <div class="friend_list">
+            {% for friend in data.friends_data.friend_list %}
+                <div>
+                    <div class="image_container">
+                        <a href=https://vk.com/id{{ friend.id }} target="_blank"><img src="{{ friend.photo_200_orig }}"
+                                                                                      alt=></a>
+                    </div>
+                    <a href=https://vk.com/id{{ friend.id }} target="_blank">
+                        <div class="friend_name">{{ friend.first_name }} {{ friend.last_name }}</div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+{% endblock %}

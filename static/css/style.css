@@ -1,0 +1,74 @@
+.button {
+    border-radius: 3px;
+    padding: 7px 16px 8px;
+    background-color: #5181b8;
+    color: #fff;
+    font: 13px Arial;
+    display: block;
+    width: 115px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.friend_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.friend_list img {
+    width: 100%;
+    height: auto;
+
+}
+
+.image_container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+
+}
+
+.image_container:hover {
+    box-shadow: 0 0 15px 3px rgba(50, 50, 50, 0.7);
+    transition: 1s;
+}
+
+h1 {
+    text-align: center;
+    font: 70px Calibri;
+    color: #5181b8;
+}
+
+h2 {
+    text-align: center;
+    font: 30px Calibri;
+    color: #5181b8;
+    margin-top: 40px;
+}
+
+body {
+    background-color: #edeef0;
+}
+
+a {
+    text-decoration: none;
+    color: #5181b8;
+
+}
+
+
+.friend_name {
+    margin-top: 15px;
+    text-align: center;
+    font: 28px Calibri;
+    color: #5181b8;
+}
+
+
+

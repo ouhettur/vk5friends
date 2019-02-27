@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load socialaccount %}
+{% block content %}
+    {% if data.is_authenticated %}
+        <h2>Hi, <a href=https://vk.com/id{{ data.user_vk_id }} target="_blank">{{ data.username }}</a>!</h2>
+        <div class="image_container">
+            <a href=https://vk.com/id{{ data.user_vk_id }} target="_blank"><img src="{{ data.photo }}" alt=></a>
+        </div>
+    {% elif data.is_authenticated is False %}
+        <h2>
+            To use the application you need to login via Vk.com </h2>
+        <a href="{% provider_login_url "vk" %}" class="button">Login with VK</a>
+    {% endif %}
+    {% block app %}
+    {% endblock %}
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends 'app/baseapp.html' %}
+{% load socialaccount %}
+{% block app %}
+
+    <h2>We can get a list of friends due to lack of permission. Try to login.</h2>
+    <a href="{% provider_login_url "vk" %}" class="button">Login with VK</a>.
+
+{% endblock %}
